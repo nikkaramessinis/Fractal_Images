@@ -1,10 +1,12 @@
 #include <iostream>
-#include "BitmapFileHeader.h"
-#include "BitmapInfoHeader.h"
 
+#include "Bitmap.h"
+using namespace caveofprogramming;
 using namespace std;
 
 int main() {
-	cout << "hello" << endl;
+	Bitmap bitmap(800,600);
+	bitmap.write("test.bmp");
+	while (1);
 	return 0;
 }
